@@ -88,6 +88,62 @@ body {
     }
   }    
     
+
+  #home { 
+    margin: 0;
+    background-color:  #f0f0f0;
+    padding-top: 200px;        
+    padding-bottom: 200px;
+    padding-left: 50px;
+    padding-right: 50px;
+    left: 0;
+    right: 0;
+}
+h1 {
+    color: #302d2d;
+    margin-left: 50px;
+    display: block;
+}
+#span {
+    color: #2a2727;
+    font-size: 40px;
+    margin-top: 15px;
+}
+#mark-text {
+    color: black;
+}
+p {
+    margin-left: 50px;
+}
+.social-media-icons {
+    display: block;
+    justify-content: center; 
+    padding-left: 4rem;
+    letter-spacing: 5px;
+}  
+.social-media-icons a {
+    text-decoration: none;
+    color: #000;
+    font-size: 24px;
+    gap: 4em;
+}
+.social-media-icons a:hover {
+    color: #0073e6; 
+}
+#img {
+    display: block;
+    width: 300px;
+    border-radius: 50px;
+    margin-top: 2em;
+    margin-left: 10px;
+}
+@media (max-width: 600px) {
+    .social-media-icons {
+      font-size: 20px;
+    }
+}
+
+
     
     
     #background {
@@ -192,61 +248,6 @@ body {
 
 
 
-#home { 
-    margin: 0;
-    background-color:  #f0f0f0;
-    padding-top: 200px;        
-    padding-bottom: 200px;
-    padding-left: 50px;
-    padding-right: 50px;
-    left: 0;
-    right: 0;
-}
-h1 {
-color: #302d2d;
-margin-left: 50px;
-display: block;
-}
-#span {
-color: #2a2727;
-font-size: 40px;
-margin-top: 15px;
-}
-#mark-text {
-color: black;
-}
-p {
-margin-left: 50px;
-}
-.social-media-icons {
-display: block;
-justify-content: center; 
-padding-left: 4rem;
-letter-spacing: 5px;
-}  
-.social-media-icons a {
-text-decoration: none;
-color: #000;
-font-size: 24px;
-gap: 4em;
-}
-.social-media-icons a:hover {
-color: #0073e6; 
-}
-#img {
-display: block;
-width: 300px;
-border-radius: 50px;
-margin-top: 2em;
-margin-left: 30px;
-}
-@media (max-width: 600px) {
-    .social-media-icons {
-      font-size: 20px;
-    }
-}
-
-
     #about-me {
         background-color: green;
         padding-bottom: 50px;
@@ -263,7 +264,7 @@ margin-left: 30px;
       }
     #profile-about-me {
         width: 300px;
-        margin-left: 65px;
+        margin-left: 15px;
         padding-top: 25px;
         padding-bottom: 25px;
         border-radius: 50%;
