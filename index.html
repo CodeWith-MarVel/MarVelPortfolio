@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MarVel Mark Portfolio</title>
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+  <header>
+
+        <div style="
+        display: flex; 
+        justify-content: space-between;
+        ">
+        <div class="logo"><a href="navbar.html">Portfolio.</div></a>
+            <nav>
+              <div class="menu-icon" onclick="toggleMenu()">
+                &#9776;
+              </div>
+              <ul class="nav-links">
+                <li><a id="home-nav" href="#home">Home</a></li>
+                <li><a href="#about-me">About</a></li>
+                <li><a href="#background">Background</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </nav>
+        </div>    
+
+  </header>
+
+
+  <main>
+
+      <article id="home">
+        <section class="section-1">
+            <h1>Hi.It's Me <br><span id="span">I'm <span id="mark-text">Mark</span></span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae facilis exercitationem eligendi hic ipsam eos, sapiente natus nam fugiat laboriosam quae harum nisi cupiditate optio reprehenderit quos provident consequuntur assumenda.</p>
+            <div class="social-media-icons">
+              <a href="https://www.facebook.com/profile.php?id=100087273379300&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://x.com/Mar_Vel07?t=WTyryWWgsTjMBAw2T7m2Rw&s=09" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/mar_vel_07_?igsh=MXAxdXprMXBvcmp4cg==" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://wa.me/qr/2QU5EFDTAZYWJ1" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </section>
+        <div>
+            <img id="img" src="portfolio-profile.jpg" alt="portfolio-profile">
+        </div>
+      </article>
+
+
+      <article id="about-me">
+        <section id="section">
+            <p id="h1">ABOUT ME</p>
+            <div id="about-me-grid"> 
+                <div ><img id="profile-about-me" src="portfolio-profile.jpg" alt="profile-about-me"></div>
+
+                <div><p id="name-text">MARVELOUS MARK <br><span id="field">FULL STACK DEVELOPER AND <br> GRAPHICS DESIGNER</span></p></div>
+
+                <div></div>
+        </section>
+        <div id="sweetener">
+            <p id="aside">Designing and developing is my passion.I see beauty in all things, and I design what I see.</p>
+            </p>
+        </div>
+      </article>
+
+
+      <article id="background">
+        <section>
+            <h1 id="h2">MY BACKGROUND</h1>
+            <ul>Education
+                <li>Aspirant of OAU applying for foreign language(GERMAN)</li>
+            </ul>
+            <ul>Work Experience
+                <li>Built an E-commerce for a client</li>
+                <li>Built a portfolio for myself</li>
+                <li>Freelancer, UpWork and Fiverr</li>
+            </ul>
+            <p id="written-aside">I have been a graphics desiger for 2years and have been a web developer for 1 year.Over the year have been able to build website with HTML, CSS and JAVASCRIPT, Planning to learn more programming languages 
+            </p>
+        </section>
+      </article>
+
+
+      <article id="portfolio">
+        <section>
+            <div style="
+            padding: 1em;
+              font-size: 25px;
+              color: rgb(0, 0, 0);
+              font-weight: 600;">MY FEATURED WORKS</div>
+            <div class="content">
+                <div class="spacer"><h1 id="h4">01</h1>
+                  <img src="oecollectionhomepage.PNG" alt="Pop Up Image" class="popup-image">
+                </div><br>
+                <div class="spacer"><h1 id="h4">02</h1>
+                  <img src="Mine-portfolio-homepage.PNG" alt="review Image" class="popup-image">
+                </div>
+                <div class="spacer"><h1 id="h4">03</h1>
+                  <img src="oecollectionshoppingpage.PNG" alt="show Up Image" class="popup-image">
+                </div>
+                </div>
+            </div>
+        </section>
+      </article>
+
+
+
+      <article id="contact">
+        <section>
+            <h1 id="h3">GET IN TOUCH WITH MARK</h1>
+            <div class="social-media-icons">
+              <a href="https://www.facebook.com/profile.php?id=100087273379300&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://x.com/Mar_Vel07?t=WTyryWWgsTjMBAw2T7m2Rw&s=09" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/mar_vel_07_?igsh=MXAxdXprMXBvcmp4cg==" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://wa.me/qr/2QU5EFDTAZYWJ1" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+              <div>
+                <img id="img" src="portfolio-profile.jpg" alt="portfolio-profile">
+            </div>
+            <p id="footer">&copy; 2024 Mark Portfolio Web Page. All rights reserved.</p>
+        </section>
+    </article>
+  </main>  
+   
+  <script>
+    function toggleMenu() {
+  const navLinks = document.querySelector('.nav-links');
+  navLinks.classList.toggle('show');
+}
+
+
+        document.addEventListener('DOMContentLoaded', () => {
+    const image = document.querySelector('.popup-image');
+
+    const observerOptions = {
+        root: null, // Use the viewport as the root
+        threshold: 0.1 // Trigger when 10% of the image is visible
+    };
+
+    const observerCallback = (entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                image.classList.add('visible');
+            } else {
+                image.classList.remove('visible');
+            }
+        });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+    observer.observe(image);
+});
+  </script>
+</body>
+</html>
