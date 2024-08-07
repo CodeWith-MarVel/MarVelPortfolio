@@ -62,7 +62,7 @@ body {
     font-size: 30px;
     color: black;
     cursor: pointer;
-    padding-left: 6em;
+    padding-left: 6.25em;
   }
   
   /* Media Query for screens with max-width of 600px */
@@ -246,8 +246,8 @@ p {
 
 
 
-
     #about-me {
+        display: grid;
         background-color: green;
         padding-bottom: 50px;
         left: 0;
