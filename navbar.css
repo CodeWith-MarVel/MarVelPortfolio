@@ -282,8 +282,11 @@ button:hover {
   opacity: 0.6;
 }
 #home-nav {
-  background-color: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet); ;
+  background-color: blue;
   border-radius: 18px;
+} 
+#home-nav:activ {
+  background-color: #005eff;
 } 
 
 
