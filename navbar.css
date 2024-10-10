@@ -96,7 +96,7 @@ header {
 #home { 
   margin: 0;
   background-color:  black;
-  padding-top:150px;        
+  padding-top:29px;        
   padding-bottom: 100px;
   padding-right: 20px;
   left: 0;
@@ -156,7 +156,7 @@ div #img {
   display: flex;
   width: 300px;
   height: auto;
-  border-radius: 50px;
+  border-radius: 100px;
   animation: growsize 3s forwards;
 }
 @keyframes growsize {
@@ -182,6 +182,7 @@ div #img {
       padding-bottom: 50px;
   }
   #h2 {
+    font-weight: 900;
       color: #fff;
       letter-spacing: 1px;
       font-size: 30px;
@@ -194,8 +195,11 @@ div #img {
   ul li {
       font-size: 15px;
       letter-spacing: 1px;
-  }    
+  } 
   #written-aside {
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 0;
       color: white;
       font-size: 12px;
       left: 0;
